@@ -39,13 +39,12 @@ public class DeveloperTest {
     @Test
     public void getTeam_returns_team_with_correct_members(){
     	Team t = Developer.getTeam();
-	ArrayList<String> m = t.getMembers();
-	assertTrue(m.contains("Ivy"), "Team should contain Ivy");
-	assertTrue(m.contains("Jack"), "Team should contain Jack");
-	assertTrue(m.contains("John S."), "Team should contain John S.");
-	assertTrue(m.contains("Nikita"), "Team should contain Nikita");
-	assertTrue(m.contains("Rohil"), "Team should contain Rohil");
-	assertTrue(m.contains("Sharanya"), "Team should contain Sharanya");
+	assertTrue(t.getMembers().contains("Ivy"), "Team should contain Ivy");
+	assertTrue(t.getMembers().contains("Jack"), "Team should contain Jack");
+	assertTrue(t.getMembers().contains("John S."), "Team should contain John S.");
+	assertTrue(t.getMembers().contains("Nikita"), "Team should contain Nikita");
+	assertTrue(t.getMembers().contains("Rohil"), "Team should contain Rohil");
+	assertTrue(t.getMembers().contains("Sharanya"), "Team should contain Sharanya");
     }
 
     // TODO: Add additional tests as needed to get to 100% jacoco line coverage, and
